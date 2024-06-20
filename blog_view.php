@@ -7,7 +7,7 @@ if ($result->num_rows > 0) {
 while($row = $result->fetch_assoc())
 {
 echo "ID: " . $row["id"]. "<br>";
-echo "Title: $row[title] <br/>";
+echo "Title: <a href='reply.php?ref= $row[id]'> $row[title] <br/>";
 echo "Content: $row[content] <br/>";
 echo "Poster: $row[poster] <br/>";
 echo "Date: $row[dmy] <br/>";
